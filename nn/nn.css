@@ -1,0 +1,154 @@
+
+body {
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	background-color: #FFFFFF;
+}
+table{
+	padding:0;
+	border-collapse: collapse;
+}
+
+input[type = text] {
+	margin: 0;
+}
+
+div#root{
+	padding: 40px;
+}
+
+div#testInput {
+	margin-bottom: 20px;
+}
+div#testInput table{
+	border: 5px solid #EEEEEE;
+	background-color: #EEEEEE;
+}
+div#testInput table td{
+	padding: 1px 5px;
+	font-size: 14px;
+	text-align: center;
+}
+div#testInput input[type=text]{
+	width: 80px;
+}
+
+
+/* ------- */
+
+div#currentTest{
+	margin-bottom: 20px;
+}
+div#decIn, div#decOut, div#refOut, div#refDiff{
+	float: left;
+	width: 100px;
+	padding: 5px;
+	text-align: center;
+}
+div#decIn{
+	background-color: #62D162;
+}
+div#decOut{
+	background-color: #D18162;
+}
+div#refOut{
+	background-color: #62BFD1;
+}
+
+/* ------- */
+
+
+div#processing {
+	display: inline-block;
+	padding: 5px;
+	background-color: #EEEEEE;
+}
+
+div#inputNodes, div#processingNodes, div#outputNodes, div#binOut, div#refBinOut, div#resDiff {
+	padding: 5px;
+	float: left;
+}
+
+div#inputNodes {
+	width: 85px;
+	background-color: #62D162;
+}
+
+div#processingNodes {
+	width: 160px;
+	background-color: #C8D162;
+}
+
+div#outputNodes {
+	width: 160px;
+	background-color: #D1AD62;
+}
+
+div#binOut {
+	width: 85px;
+	background-color: #D18162;
+}
+
+div#refBinOut {
+	width: 50px;
+	background-color: #62BFD1;
+	margin-left: 20px;
+}
+
+div#resDiff {
+	width: 50px;
+	background-color: #B277BD;
+}
+
+div.nodeTitle{
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+div.pNode, div.oNode{
+	border: 1px solid #000000;
+	margin-bottom: 5px;
+}
+
+div.pNodeMain, div.oNodeMain{
+	margin: 1px;
+	padding: 1px 5px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.fired {
+	background-color: #00FF00 !important;
+}
+
+div.pCon, div.oCon {
+	margin: 1px;
+	padding: 1px 5px;
+	font-size: 12px;
+	background-color: rgba(255,255,255,0.6);
+}
+
+div.binInNode, div.binOutNode {
+	margin: 1px;
+	padding: 1px 5px;
+	font-size: 14px;
+	background-color: rgba(255,255,255,0.8);
+}
+
+
+input#rawInput{
+	margin-bottom: 20px;
+}
+
+input#rawOutput{
+	margin-top: 20px;
+}
+
+div.clear {
+	clear: both;
+}

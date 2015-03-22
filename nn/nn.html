@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Neural Network test</title>
+	<script type="text/javascript" src="nn.js"></script>
+	<script type="text/javascript" src="visualize.js"></script>
+	<script type="text/javascript" src="sal.js"></script>
+	<link rel="stylesheet" type="text/css" href="nn.css"/>
+</head>
+<body>
+	<div id="root">
+		<div id="testInput">
+			<table>
+			<tr>
+				<td></td>
+				<td>INPUT</td>
+				<td>OUTPUT</td>
+				<td rowspan="4"><input type="button" value="Create processor" id="calculateButton"/></td>
+			</tr>
+			<tr>
+				<td>Set 1</td>
+				<td><input type="text" id="decimalInput1"/></td>
+				<td><input type="text" id="decimalOutput1"/></td>
+			</tr>
+			<tr>
+				<td>Set 2</td>
+				<td><input type="text" id="decimalInput2"/></td>
+				<td><input type="text" id="decimalOutput2"/></td>
+			</tr>
+			<tr>
+				<td>Set 3</td>
+				<td><input type="text" id="decimalInput3"/></td>
+				<td><input type="text" id="decimalOutput3"/></td>
+			</tr>
+			</table>
+		</div>
+
+		<div id="currentTest">
+			<div id="decIn"></div>
+			<div id="decOut"></div>
+			<div id="refOut"></div>
+			<div class="clear"></div>
+		</div>
+
+		<div id="processing">
+			<div id="inputNodes"></div>
+			<div id="processingNodes"></div>
+			<div id="outputNodes"></div>
+			<div id="binOut"></div>
+			<div id="refBinOut"></div>
+			<div id="resDiff"></div>
+			<div class="clear"></div>
+		</div>
+
+	</div>
+</body>
+</html>
