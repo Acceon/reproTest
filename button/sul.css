@@ -1,0 +1,33 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	border-collapse:collapse;
+}
+
+body{
+	font-family: Helvetica;
+}
+
+.uiButton{
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	padding: 4px 8px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 4px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.uiButton.over{
+	color: #FFFFFF;
+	background-color: rgba(255,64,0,0.7);
+}
+
+.uiButton.down{
+	color: #FFFFFF;
+	background-color: rgba(128,32,0,0.7);	
+}
