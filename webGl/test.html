@@ -1,0 +1,38 @@
+<html>
+
+<head>
+	<title>WebGlTest</title>
+	<script id="vertex" type="x-shader">
+		// Vertex are coordinates / geometry
+		attribute vec2 aVertexPosition;
+
+		void main(){
+			/*
+			Assigning position values to the gl_Position variable will make the shader return those values to javascript
+			The aVertexPosition are x&y values, the hardcoded 0 is z/depth (not using 3d), the forth value is some 3d perspective thing
+			*/
+			gl_Position = vec4(aVertexPosition, 0.0, 1.0);
+		}
+	</script>
+	<script id="fragment" type="x-shader">
+		// Fragment is pixels/textures
+
+		// Just tells to use high precision floating point, has to be there...
+		#ifdef GL_ES
+		precision highp float;
+		#endif
+
+		// "uniform" is a constant variable declaration
+		uniform vec4 uColor;
+
+		void main(){
+			gl_FragColor = uColor;
+		}
+
+	</script>
+</head>
+<body>
+	<canvas id="canvas" width="640" height="480"></canvas>
+</body>
+<script type="text/javascript" src="gl.js"></script>
+<html>
